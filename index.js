@@ -23,6 +23,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require("./routes/authroutes")(app);
+<<<<<<< HEAD
 require("./routes/billingRoutes")(app);
 
 if (process.env.NODE_ENV === "productions") {
@@ -36,6 +37,8 @@ if (process.env.NODE_ENV === "productions") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
+=======
+>>>>>>> f8ab99cf4fbf98b6d191ca04c225a1dc0cbb32a0
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
